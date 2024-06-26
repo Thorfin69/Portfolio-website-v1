@@ -120,13 +120,13 @@ const Footer = () => {
 
             </div>
             <h5 className="brrrr ml-16 text-sm relative justify-center md:justify-end flex md:inline   float-none md:float-end mb-10 -mt-1 md:mt-10 mr-20  ">Made with pain ‎   <span className=" text-sm bio_span bg-idkfr rounded-md font-medium">
-                <a
+                {/* <a
                     data-tooltip-id="my-tooltip"
                     data-tooltip-content="i wanna kms"
                     data-tooltip-place="top"
                 >
                     v1
-                </a>
+                </a> */}
             </span></h5>
 
 
