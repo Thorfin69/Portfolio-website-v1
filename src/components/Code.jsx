@@ -16,7 +16,7 @@ const Code = () => {
             </a>
 
             <div className="flex flex-wrap justify-center gap-4  mb-32">
-                <div className=" hover:scale-95 mt-2 mb-3 transition-all">
+                <div className=" ms:ml-2 hover:scale-95 mt-2 mb-3 transition-all">
                     <CustomCard
                         user="Vikas"
                         name="todo-list"
