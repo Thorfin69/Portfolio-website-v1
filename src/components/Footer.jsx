@@ -7,7 +7,7 @@ const Footer = () => {
         <>
             <hr className="custom-hr" />
 
-            <div className="flex  md:ml-5  gap-1 transition-all mt-8 mb-3  ml-0 justify-center md:inline-flex  ">
+            <div className="flex  md:ml-5  gap-1 transition-all mt-1 mb-3  ml-0 justify-center md:inline-flex  ">
                 <div className="hover:bg-idktbh rounded-xl transition-all">
                     <a
                         data-tooltip-id="my-tooltip"
@@ -117,43 +117,7 @@ const Footer = () => {
                         </svg>
                     </a>
                 </div>
-                <div className="hover:bg-idktbh rounded-xl transition-all">
-                    <a
-                        data-tooltip-id="my-tooltip"
-                        data-tooltip-content="authtbh"
-                        data-tooltip-place="top"
-                        className="transition-all flex justify-center items-center w-[50px] h-[50px] bg-transparent border-none rounded-[10px] cursor-pointer group-hover:bg-elevation_one active:scale-[95%] offset_ring"
-                        target="_blank"
-                        rel="noreferrer"
-                        href="https://www.buymeacoffee.com/authtbh"
-                    >
-                        <svg
-                            width="24px"
-                            height="24px"
-                            className="social_svg"
-                            viewBox="0 0 24 24"
-                            stroke-width="1.5"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                            color="#dba895"
-                        >
-                            <path
-                                d="M17 11.6V15a6 6 0 01-6 6H9a6 6 0 01-6-6v-3.4a.6.6 0 01.6-.6h12.8a.6.6 0 01.6.6zM12 9c0-1 .714-2 2.143-2v0A2.857 2.857 0 0017 4.143V3.5M8 9v-.5a3 3 0 013-3v0a2 2 0 002-2V3"
-                                stroke="#dba895"
-                                stroke-width="1.5"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            ></path>
-                            <path
-                                d="M16 11h2.5a2.5 2.5 0 010 5H17"
-                                stroke="#dba895"
-                                stroke-width="1.5"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            ></path>
-                        </svg>
-                    </a>
-                </div>
+
             </div>
             <h5 className="brrrr ml-16 text-sm relative justify-center md:justify-end flex md:inline   float-none md:float-end mb-10 -mt-1 md:mt-10 mr-20  ">Made with pain ‎   <span className=" text-sm bio_span bg-idkfr rounded-md font-medium">
                 <a

@@ -19,29 +19,15 @@ const Code = () => {
                 <div className=" hover:scale-95 mt-8 mb-3 transition-all">
                     <CustomCard
                         user="Vikas"
-                        name="Discord Api"
-                        dis="Discor bot that fetches user info"
-                        lang="typescript"
+                        name="todo-list"
+                        dis=""
+                        lang="JavaScript"
                     />
                 </div>
 
-                <div className=" hover:scale-95  -mt- transition-all">
-                    <CustomCard
-                        user="authtbh"
-                        name=" Instagram clone"
-                        dis="Instagram clone made with nextjs and appwrite"
-                        lang="Nextjs"
-                    />
-                </div>
 
-                <div className="hover:scale-95 mt-3 md:mt-8 transition-all">
-                    <CustomCard
-                        user="authtbh"
-                        name="Mew"
-                        dis="Cli helper made with rust"
-                        lang="Rust"
-                    />
-                </div>
+
+
             </div>
         </>
     );
