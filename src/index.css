@@ -1,13 +1,272 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 23, 18, 18; /* Updated color: #1e1a1a */
+  --background-end-rgb: 23, 18, 18; /* Updated color: #1e1a1a */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 23, 18, 18;
+    --background-end-rgb: 23, 18, 18;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+
+  overflow-x: hidden;
+ 
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@font-face {
+  font-family: Space;
+  src: url(../fonts/SpaceGrotesk-Light.ttf);
+}
+
+@font-face {
+  font-family: Spacee;
+  src: url(../fonts/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Lmao;
+  src: url(../fonts/SpaceGrotesk-VariableFont_wght.ttf);
+  font-weight: 600;
+  size: 63px;
+  line-height: 97px;
+}
+
+@font-face {
+  font-family: Spaces;
+  src: url(../fonts/SpaceGrotesk-VariableFont_wght.ttf);
+  font-weight: 500;
+  size: 19px;
+  line-height: 27px;
+}
+
+@font-face {
+  font-family: Nuh;
+  src: url(../fonts/SpaceGrotesk-VariableFont_wght.ttf);
+  font-weight: 300;
+  size: 18px;
+  line-height: 28px;
+}
+
+@font-face {
+  font-family: Nuhuh;
+  src: url(../fonts/JetBrainsMono[wght].ttf);
+  font-weight: 300;
+  size: 18px;
+  line-height: 28px;
+}
+
+@font-face {
+  font-family: Jet;
+  src: url(../fonts/JetBrainsMono[wght].ttf);
+  font-weight: 300;
+  size: 14px;
+  line-height: 20px;
+}
+
+@font-face {
+  font-family: NuhUh;
+  src: url(../fonts/JetBrainsMono[wght].ttf);
+  font-weight: 400;
+  size: 16px;
+  line-height: 22px;
+}
+@font-face {
+  font-family: Lamfao;
+  src: url(../fonts/SpaceGrotesk-VariableFont_wght.ttf);
+  font-weight: 500;
+  size: 36px;
+  line-height: 50px;
+}
+
+.spacee {
+  font-family: Space;
+}
+
+.meow {
+  font-family: Lmao;
+}
+
+#my-tooltip {
+  background-color: #bda3a3;
+  color: #1e1818;
+  border-radius: 7px;
+  font-family: Space;
+  opacity: 100%;
+  transition: all;
+}
+
+.huh {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+#btn {
+  font-family: space;
+}
+
+.brr {
+  font-family: space;
+}
+
+.br {
+  font-family: Spacee;
+}
+
+.brrr {
+  font-family: Lamfao;
+}
+
+.brrrr {
+  font-family: Nuh;
+  color: #bda3a3;
+}
+
+.bio_span {
+  font-family: Nuhuh;
+}
+
+.User {
+  font-family: NuhUh;
+}
+
+.Usr {
+  width: clamp(100px, 50vw, 500px);
+}
+
+/* Apply global styles to fonts */
+.card-head {
+  font-family: "Spaces", sans-serif;
+}
+
+.card-dis {
+  font-family: "Jet", sans-serif;
+  font-size: smaller;
+}
+
+.circle {
+  background-color: rgb(48, 100, 255);
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-top: 11px;
+  display: inline-block; /* Ensures inline behavior */
+}
+
+.group {
+  border-radius: 7px;
+  position: relative;
+  border: 2px solid #bda3a3;
+  transition: margin-top 0.3s ease-in-out;
+  border-style: solid;
+  border-color: green;
+}
+
+.custom-card {
+  position: relative;
+  border: 2px solid var(--text-idkfrl); 
+}
+
+.card-dis,
+.card-head,
+.circle {
+  color: var(
+    --text-idkfrl
+  ); /* Apply text-idkfrl color to h6 elements and circle */
+}
+
+
+.cards:hover{
+  background-color: aliceblue;
+}
+
+/* styles.css */
+
+.custom-hr {
+  margin-top: 120px;
+  background: #332f2f;
+  color: #332f2f;
+  border-color: #332f2f;
+  height: 2px;
+  width: 755px;
+  margin: 0 auto;
+  margin-bottom: 31px;
+}
+
+/* Responsive design: Adjust width for small screens */
+@media (max-width: 600px) {
+  .custom-hr {
+    width: 100px;
+  }
+}
+
+/* Increase z-index of the Navbar and its content */
+.sticky {/* z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) */
+  z-index: 1000; /* Set a high value to ensure it's above other content */
+  
+}
+
+/* If you specifically need to increase z-index for child elements */
+.sticky header,
+.sticky header .flex {
+  z-index: 1001; /* Incrementing z-index for nested elements, though it's not always necessary */
+  
+}
+
+/* Further specificity if required for links or other elements */
+.sticky header .flex a {
+  z-index: 1002;
+}
+
+.decor {
+  font-size: 10rem;
+  font-family: Spacee;
+  z-index: -100;
+  -webkit-text-fill-color: #171212;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #dba895;
+  -webkit-user-select: none;
+}
+
+
+
+
+.navbar.sticky { /* Ensure border color changes when scrolling */
+  transition-duration: 0s; /* Set transition duration to 0s for instant transition */
 }
