@@ -93,7 +93,7 @@ const Profile = () => {
     };
     return (
         <>
-            <div className="md:ml-[20vh]" >
+            <div className="md:ml-[16vh]" >
                 <div className="justify-center  ">
 
                     <div className="meow text-clamp mt-8  ml-5 md:ml-36 md:-mt-28 mt-20Dps w-80 text-idkfrl xl:ml-48 ">
@@ -105,6 +105,7 @@ const Profile = () => {
                             Bringing designs to life with code.
                         </h4>
                     </div>
+
 
                     <div className="flex   md:ml-36 md:gap-3 mt-5 ml-2 gap-2 transition-all">
                         <div className="hover:bg-idktbh rounded-xl transition-all">
@@ -240,7 +241,7 @@ const Profile = () => {
                 <div className="Container md:relative md:flex md:max-w-[140vh]">
                     <div className="md:block ">
                         <h2 className="brrr md:ml-48 ml-4 mt-28 text-primary-brown" id="about">
-                            Activity<span className="text-idkfrl">:discord</span>
+                            Currently<span className="text-idkfrl">: I Am</span>
                         </h2>
                         <img
                             src={`https://cdn.discordapp.com/avatars/${userId}/${avatarId}.png`}
