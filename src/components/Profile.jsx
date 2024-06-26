@@ -93,17 +93,18 @@ const Profile = () => {
     };
     return (
         <>
-            <div className="meow text-clamp  ml-5 md:ml-36 md:-mt-28 mt-20Dps w-80 text-idkfrl xl:ml-48 ">
-                <h1 className="w-80 text-2xl md:text-6xl">Vikas</h1>
+
+            <div className="meow text-clamp mt-8  ml-5 md:ml-36 md:-mt-28 mt-20Dps w-80 text-idkfrl xl:ml-48 ">
+                <h1 className="w-80 text-3xl md:text-6xl">Vikas</h1>
             </div>
-            <div className="spacee w-10/12 md:w-5/12 ml-5 md:ml-36 text-primary-brown  text-lg md:text-3xl">
+            <div className="spacee  w-10/12 md:w-5/12 ml-5 md:ml-36 text-primary-brown  text-lg md:text-3xl">
                 <h4>
                     Innovative Frontend Wizard.<br></br>
                     Bringing designs to life with code.
                 </h4>
             </div>
 
-            <div className="flex md:ml-36 md:gap-5 mt-5 ml-2 gap-2 transition-all">
+            <div className="flex  md:ml-36 md:gap-5 mt-5 ml-2 gap-2 transition-all">
                 <div className="hover:bg-idktbh rounded-xl transition-all">
                     <a
                         data-tooltip-id="my-tooltip"
@@ -219,7 +220,7 @@ const Profile = () => {
                 <button
                     onClick={scrollToBottom}
                     id="btn"
-                    className="md:ml-36 ml-5 mt-5 hover:bg-idkfr active:scale-95 transition-all   border-spacing-4 bg-idktbh border-primary-brown  text-primary-brown w-56 h-10 rounded-xl"
+                    className="  w-80 h-14 first-line:justify-center md:ml-36 ml-5 mt-5 hover:bg-idkfr active:scale-95 transition-all border-spacing-4 bg-idktbh border-primary-brown  text-primary-brown w-56 h-10 rounded-xl"
                 >
                     Discover my work ↓
                 </button>
@@ -235,7 +236,7 @@ const Profile = () => {
 
 
 
-            <h2 className="brrr md:ml-48 ml-4 mt-28 text-primary-brown" id="about">
+            <h2 className="brrr  md:ml-48 ml-4 mt-28 text-primary-brown" id="about">
                 Activity<span className="text-idkfrl">:discord</span>
             </h2>
             <img
@@ -250,43 +251,45 @@ const Profile = () => {
                 <h6 className="brr">{formatTime(currentTime)}</h6>
             </div>
 
-            <div className="w-auto flex  md:w-96 md:absolute  right-0 md:-mt-81 mr-16 text-primary-brown">
-                <h1 className="brrr text-md text-primary-brown  ml-1 w-44 md:hidden inline ">
-                    Bio<span className="text-idkfrl ">:myself</span>
+            <div className=" mt-14 w-auto flex  md:w-96 md:absolute  right-0 md:-mt-81 mr-16 text-primary-brown">
+                <h1 className=" text-2xl ml-2 brrr text-md text-primary-brown  w-44 md:hidden inline ">
+                    Bio {/* Bio<span className="text-idkfrl ">:myself</span> */}
                 </h1>
-                <h5 className="brrrr w-full md:w-96 mt-4 text-lg  ">
-                    Hey there, I’m Vikas! :] I’m a ‎
-                    <span className="bio_span bg-idkfr rounded-md font-medium">
-                        <a
-                            data-tooltip-id="my-tooltip"
-                            // data-tooltip-content={`${Math.floor(ageInSeconds)}.${(ageInSeconds % 1).toFixed(2).substring(2)}`}
-                            data-tooltip-place="top"
-                            data-tooltip-content="👻"
-                        >
-                            18
-                        </a>
-                    </span>{" "}
-                    year old frontend developer and freelancer based in India. I’ve taken
-                    coding seriously since ‎
-                    <span className="bio_span bg-idkfr rounded-md font-medium -z-10">
-                        2024
-                    </span>
-                    , and have been freelancing since ‎
-                    <span className="bio_span bg-idkfr rounded-md font-medium">2024</span>
-                    . Recently, however, I’ve grown a knack for giving back to the
-                    community. I like contributing to ‎
-                    <span className="bio_span bg-idkfr rounded-md font-medium">
-                        <a
-                            data-tooltip-id="my-tooltip"
-                            data-tooltip-content="🫡"
-                            data-tooltip-place="bottom"
-                        >
-                            open source
-                        </a>
-                    </span>{" "}
-                    as a web developer, which is probably the reason why you’ve ended up
-                    here. Currently struggling with react and nodeJs
-                </h5>
+                <div className="text-sm"  >
+                    <h5 className=" brrrr text-[13px] w-full mt-9 md:w-96 mt-4 text-lg  ">
+                        Hey there, I’m Vikas! :] I’m a ‎
+                        <span className=" bio_span bg-idkfr rounded-md font-medium">
+                            <a
+                                data-tooltip-id="my-tooltip"
+                                // data-tooltip-content={`${Math.floor(ageInSeconds)}.${(ageInSeconds % 1).toFixed(2).substring(2)}`}
+                                data-tooltip-place="top"
+                                data-tooltip-content="👻"
+                            >
+                                18
+                            </a>
+                        </span>{" "}
+                        year old frontend developer and freelancer based in India. I’ve taken
+                        coding seriously since ‎
+                        <span className="bio_span bg-idkfr rounded-md font-medium -z-10">
+                            2024
+                        </span>
+                        , and have been freelancing since ‎
+                        <span className="bio_span bg-idkfr rounded-md font-medium">2024</span>
+                        . Recently, however, I’ve grown a knack for giving back to the
+                        community. I like contributing to ‎
+                        <span className="bio_span bg-idkfr rounded-md font-medium">
+                            <a
+                                data-tooltip-id="my-tooltip"
+                                data-tooltip-content="🫡"
+                                data-tooltip-place="bottom"
+                            >
+                                open source
+                            </a>
+                        </span>{" "}
+                        as a web developer, which is probably the reason why you’ve ended up
+                        here. Currently struggling with react and nodeJs
+                    </h5>
+                </div>
             </div>
 
             <Tooltip id="my-tooltip" />

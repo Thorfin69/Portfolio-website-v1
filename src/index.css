@@ -270,3 +270,6 @@ body {
 .navbar.sticky { /* Ensure border color changes when scrolling */
   transition-duration: 0s; /* Set transition duration to 0s for instant transition */
 }
+.border-primary-brown {
+   border: 1px solid #dba895;
+}
