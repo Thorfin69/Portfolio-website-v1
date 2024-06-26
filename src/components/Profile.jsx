@@ -230,7 +230,7 @@ const Profile = () => {
                     </a>
                     <div />
 
-                    <div className="huh  md:block hidden absolute  md:mr-[60vh] top-28 mt-16  right-0 md:opacity-100 opacity-100 size-80 ">
+                    <div className="huh  md:block hidden absolute  md:mr-[50vh] top-28 mt-16  right-0 md:opacity-100 opacity-100 size-80 ">
                         <img src={Image} height="1000"
                             width="1000"
                             className="Us r  w-full object-cover rounded-2xl hover:scale-105 transition-all"
