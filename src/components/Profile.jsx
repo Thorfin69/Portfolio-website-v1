@@ -93,17 +93,18 @@ const Profile = () => {
     };
     return (
         <>
-            <div className="md:ml-[16vh]" >
-                <div className="justify-center  ">
-
-                    <div className="meow text-clamp mt-8  ml-5 md:ml-36 md:-mt-28 mt-20Dps w-80 text-idkfrl xl:ml-48 ">
-                        <h1 className="w-80 text-3xl md:text-6xl">Vikas</h1>
-                    </div>
-                    <div className="spacee  w-10/12 md:w-5/12 ml-5 md:ml-36 text-primary-brown  text-lg md:text-3xl">
-                        <h4>
-                            Innovative Frontend Wizard.<br></br>
-                            Bringing designs to life with code.
-                        </h4>
+            <div className="">
+                <div className="sm:ml-10 md:ml-20 " >
+                    <div className="md:ml-1 " >
+                        <div className="meow text-clamp mt-8  ml-5 md:ml-36 md:-mt-28  w-80 text-idkfrl  ">
+                            <h1 className="w-80 text-3xl md:text-6xl">Vikas</h1>
+                        </div>
+                        <div className="spacee  w-10/12 md:w-5/12 ml-5 md:ml-36 text-primary-brown  text-lg md:text-3xl">
+                            <h4>
+                                Innovative Frontend Wizard.<br></br>
+                                Bringing designs to life with code.
+                            </h4>
+                        </div>
                     </div>
 
 
@@ -230,71 +231,74 @@ const Profile = () => {
                         </button>
                     </a>
                     <div />
+                </div>
 
-                    <div className="huh  md:block hidden absolute  md:mr-[50vh] top-28 mt-16  right-0 md:opacity-100 opacity-100 size-80 ">
-                        <img src={Image} height="1000"
-                            width="1000"
-                            className="Us r  w-full object-cover rounded-2xl hover:scale-105 transition-all"
+                <div className="sm:ml-20">
+                    <div className="huh sm:block   size-80 hidden  absolute md:ml-[100vh] top-28 mt-16  md:opacity-100 opacity-100  ">
+                        <img src={Image}
+                            className="Us r  md:mr-36  object-cover rounded-2xl hover:scale-105 transition-all"
                             alt="thumbnail" />
                     </div>
                 </div>
-                <div className="Container md:relative md:flex md:max-w-[140vh]">
-                    <div className="md:block ">
-                        <h2 className="brrr md:ml-48 ml-4 mt-28 text-primary-brown" id="about">
-                            Currently<span className="text-idkfrl">: I Am</span>
-                        </h2>
-                        <img
-                            src={`https://cdn.discordapp.com/avatars/${userId}/${avatarId}.png`}
-                            alt="pfp"
-                            className="md:size-44 size-24 md:ml-44 ml-4 rounded-xl mt-5"
-                        />
+            </div>
+
+            <div className=" sm:ml-20 gap-3 sm:relative md:flex justify-between md:max-w-[140vh]">
+                <div className="">
+                    <h2 className="brrr  md:ml-48 ml-4 mt-28 text-primary-brown" id="about">
+                        Currently<span className="text-idkfrl">: I Am</span>
+                    </h2>
+                    <img
+                        src={`https://cdn.discordapp.com/avatars/${userId}/${avatarId}.png`}
+                        alt="pfp"
+                        className="md:size-44 size-24 md:ml-44 ml-4 rounded-xl mt-5"
+                    />
 
 
 
-                        <div className=" text-primary-brown w-44 md:ml-96 md:-mt-40 -mt-24 ml-32  ">
-                            <h4 className="User text-xl">@{username ? username : "fetching"}</h4>
-                            <h5 className="brr">{discordStatus ? discordStatus : "Fetching"}</h5>
-                            <h6 className="brr">{formatTime(currentTime)}</h6>
-                        </div>
+                    <div className=" text-primary-brown md:ml-96 md:-mt-40 -mt-24 ml-32  ">
+                        <h4 className="User text-xl">@{username ? username : "fetching"}</h4>
+                        <h5 className="brr">{discordStatus ? discordStatus : "Fetching"}</h5>
+                        <h6 className="brr">{formatTime(currentTime)}</h6>
                     </div>
-                    <div className="w-auto  md:w-96 md:absolute right-0 md:-mt-81 mr-16 text-primary-brown mt-12 ml-3">
-                        <h1 className="brrr text-md text-primary-brown ml-1 w-44 md:hidden inline ">
-                            Bio<span className="text-idkfrl"></span>
-                        </h1>
-                        <h5 className=" md:mt-[10vh] md:text-[20px] ">
-                            Yoo, I’m Vikas! :] I’m a ‎ 18
-                            <span className="bio_span bg-idkfr rounded-md font-medium">
-                                {/* <a
+                </div>
+                <div className="w-auto  md:w-96 md:absolute right-0 md:-mt-81 mr-16 text-primary-brown mt-12 ml-3">
+                    <h1 className="brrr text-md text-primary-brown ml-1 w-44 md:hidden md:mb-4 inline ">
+                        <span className="text-idkfrl font-medium text-3xl text-pu">Bio</span>
+                    </h1>
+                    <h5 className=" md:mt-[10vh] md:text-[20px] ">
+                        Yoo, I’m Vikas! :] I’m a ‎
+                        <span className="bio_span bg-idkfr rounded-md font-medium">
+                            {/* <a
                             data-tooltip-id="my-tooltip"
                             data-tooltip-content={`${Math.floor(ageInSeconds)}.${(ageInSeconds % 1).toFixed(2).substring(2)}`}
                             data-tooltip-place="top"
                         >
                             15
-                        </a> */}
-                            </span>{" "}
-                            year old creative frontend developer and freelancer based in India. I’ve taken
-                            coding seriously since ‎
-                            <span className="bio_span bg-idkfr rounded-md font-medium -z-10">
-                                2024
-                            </span>
-                            , and have been freelancing since ‎
-                            <span className="bio_span bg-idkfr rounded-md font-medium">2024</span>
-                            . Recently, however, I’ve grown a knack for giving back to the
-                            community. I like contributing to ‎
-                            <span className="bio_span bg-idkfr rounded-md font-medium">
-                                <a
-                                    data-tooltip-id="my-tooltip"
-                                    data-tooltip-content="🤓"
-                                    data-tooltip-place="top"
-                                >
-                                    open source
-                                </a>
-                            </span>{" "}
-                            as a web developer. Currently struggling with React and Nodejs.
-                        </h5>
-                    </div>
+                        </a> */}18
+                        </span>{" "}
+                        year old creative frontend developer and freelancer based in India. I’ve taken
+                        coding seriously since ‎
+                        <span className="bio_span bg-idkfr rounded-md font-medium -z-10">
+                            2024
+                        </span>
+                        , and have been freelancing since ‎
+                        <span className="bio_span bg-idkfr rounded-md font-medium">2024</span>
+                        . Recently, however, I’ve grown a knack for giving back to the
+                        community. I like contributing to ‎
+                        <span className="bio_span bg-idkfr rounded-md font-medium">
+                            <a
+                                data-tooltip-id="my-tooltip"
+                                data-tooltip-content="🤓"
+                                data-tooltip-place="top"
+                            >
+                                open source
+                            </a>
+                        </span>{" "}
+                        as a web developer. Currently struggling with React and Nodejs.
+                    </h5>
                 </div>
             </div>
+
 
             <Tooltip id="my-tooltip" />
         </>

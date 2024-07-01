@@ -125,12 +125,21 @@ body {
   transition: all;
 }
 
+
 .huh {
   animation-name: floating;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
+.toUp{
+
+  animation-name: toUp;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+
+}
+/* animations */
 
 @keyframes floating {
   0% {
@@ -143,6 +152,21 @@ body {
     transform: translate(0, -0px);
   }
 }
+
+
+
+@keyframes toUp {
+0% {
+  transform: translateY(-5px);
+  opacity: -10%;
+
+} 
+100% {
+  transform: translateY(0px);
+  opacity: 100%;
+} 
+}
+
 
 #btn {
   font-family: space;
@@ -283,3 +307,10 @@ body {
 .border-primary-brown {
    border: 1px solid #dba895;
 }
+
+.maxWidth {
+  max-width: 200px;
+}
+
+/* media quarryes */
+
