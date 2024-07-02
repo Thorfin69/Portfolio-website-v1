@@ -9,7 +9,7 @@ import Skills from './components/Skills';
 function App() {
   return (
     <>
-      <div className='' >
+      <div className='sm:ml-[12vh]' >
 
         <Navbar />
         <h1 className="decor opacity-20 -mt-34 ml-20 hidden md:inline-block" >Hax</h1>
