@@ -20,6 +20,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
  
 }
 
@@ -298,7 +299,16 @@ body {
   -webkit-user-select: none;
 }
 
-
+.custom-cursor {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff; /* Change color as desired */
+  border: 2px solid #000; /* Optional border */
+  cursor: none; /* Hide default cursor */
+  z-index: 999; /* Ensure cursor stays on top */
+}
 
 
 .navbar.sticky { /* Ensure border color changes when scrolling */

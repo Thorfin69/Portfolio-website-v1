@@ -5,10 +5,12 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Skills from './components/Skills';
 
+
 function App() {
   return (
     <>
       <div className='' >
+
         <Navbar />
         <h1 className="decor opacity-20 -mt-34 ml-20 hidden md:inline-block" >Hax</h1>
         <Profile className='' />
