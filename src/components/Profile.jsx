@@ -93,7 +93,7 @@ const Profile = () => {
     };
     return (
         <>
-            <div className="">
+            <div className="container flex-wrap">
                 <div className="sm:ml-10 md:ml-20 " >
                     <div className="md:ml-1 " >
                         <div className="meow text-clamp mt-8  ml-5 md:ml-36 md:-mt-28  w-80 text-idkfrl  ">
@@ -233,10 +233,10 @@ const Profile = () => {
                     <div />
                 </div>
 
-                <div className="sm:ml-20">
-                    <div className="huh sm:block   size-80 hidden  absolute md:ml-[100vh] top-28 mt-16  md:opacity-100 opacity-100  ">
+                <div className="sm:ml-20 ">
+                    <div className="huh sm:block size-80 hidden absolute  md:ml-[100vh] top-28 mt-16  md:opacity-100 opacity-100  ">
                         <img src={Image}
-                            className="Us r  md:mr-36  object-cover rounded-2xl hover:scale-105 transition-all"
+                            className=" md:mr-36  object-cover rounded-2xl hover:scale-105 transition-all"
                             alt="thumbnail" />
                     </div>
                 </div>
