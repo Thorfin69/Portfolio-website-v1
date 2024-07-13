@@ -205,6 +205,7 @@ body {
 }
 
 /* Apply global styles to fonts */
+
 .card-head {
   font-family: "Spaces", sans-serif;
 }
@@ -234,6 +235,7 @@ body {
 }
 
 .custom-card {
+   
   position: relative;
   border: 2px solid var(--text-idkfrl); 
 }

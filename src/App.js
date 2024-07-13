@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 // import Code from './components/Code';
 import Footer from './components/Footer';
 import Skills from './components/Skills';
+import Code from './components/Code';
 
 
 
@@ -22,7 +23,7 @@ function App() {
         </div>
         <Skills />
 
-        {/* <Code /> */}
+        <Code />
         <h1 className="decor opacity-20 hidden md:inline-block md:ml-[20vh] -mt-[100vh] bottom  ">@Vikas</h1>
         <Footer />
 
