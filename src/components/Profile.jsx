@@ -29,8 +29,8 @@ const Profile = () => {
         const fetchDiscordStatus = async () => {
             try {
                 const response = await fetch(
-                    " https://api.lanyard.rest/v1/users/634685907286360065",
-                );
+                    "https://api.lanyard.rest/v1/users/634685907286360065"
+                ); // Replace with your Lanyard user ID
                 const data = await response.json();
 
                 if (data.success) {
@@ -38,6 +38,12 @@ const Profile = () => {
                     setUserId(data.data.discord_user.id);
                     setAvatarId(data.data.discord_user.avatar);
                     setUsername(data.data.discord_user.username);
+
+                    // Call your service to update Lanyard with Spotify activity (replace with actual logic)
+                    const spotifyStatus = await fetchSpotifyStatus(); // Replace with your Spotify API integration
+                    if (spotifyStatus) {
+                        updateLanyardStatus(spotifyStatus); // Replace with your service's logic
+                    }
                 } else {
                     console.error("Failed to fetch Discord status");
                 }
@@ -45,6 +51,38 @@ const Profile = () => {
                 console.error("Error fetching Discord status:", error);
             }
         };
+
+        // Function to fetch Spotify playback status (replace with actual Spotify API integration)
+        const fetchSpotifyStatus = async () => {
+            try {
+                const spotifyResponse = await fetch('https://your-spotify-api-endpoint');
+                const spotifyData = await spotifyResponse.json();
+                return spotifyData?.isPlaying ? 'Listening to Spotify' : null;
+            } catch (error) {
+                console.error("Error fetching Spotify data:", error);
+                return null;
+            }
+        };
+
+        // Function to update Lanyard status with Spotify activity (replace with your service's logic)
+        const updateLanyardStatus = async (newStatus) => {
+            try {
+                // Send a request to your service to update Lanyard with the new status
+                const updateResponse = await fetch('https://your-service-endpoint', {
+                    method: 'POST',
+                    body: JSON.stringify({ status: newStatus }),
+                });
+                if (!updateResponse.ok) {
+                    throw new Error('Failed to update Lanyard status');
+                }
+            } catch (error) {
+                console.error("Error updating Lanyard status:", error);
+            }
+        };
+
+
+
+
 
         // Initial fetch
         fetchDiscordStatus();

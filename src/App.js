@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Skills from './components/Skills';
 
 
+
 function App() {
   return (
     <>
@@ -24,6 +25,7 @@ function App() {
         {/* <Code /> */}
         <h1 className="decor opacity-20 hidden md:inline-block md:ml-[20vh] -mt-[100vh] bottom  ">@Vikas</h1>
         <Footer />
+
       </div>
     </>
   );
