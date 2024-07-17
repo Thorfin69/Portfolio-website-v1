@@ -57,6 +57,7 @@ const Profile = () => {
             try {
                 const spotifyResponse = await fetch('https://your-spotify-api-endpoint');
                 const spotifyData = await spotifyResponse.json();
+                console.log("Spotify Data:", spotifyData);
                 return spotifyData?.isPlaying ? 'Listening to Spotify' : null;
             } catch (error) {
                 console.error("Error fetching Spotify data:", error);
