@@ -1,4 +1,5 @@
 import React from 'react'
+import Progress from "./Progress";
 
 export default function Stakes() {
     return (
@@ -14,7 +15,10 @@ export default function Stakes() {
                     <li className='toUp'>Tailwindcss</li>
                     <li className='toUp'>React</li>
                     <li className='toUp'>Nodejs</li>
+                    
                 </ul>
+                    <Progress label='javaScript'  progress={60}/>
+     
             </div>
         </>
     )
