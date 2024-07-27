@@ -17,7 +17,7 @@ export default function Stakes() {
                     <li className='toUp'>Nodejs</li>
                     
                 </ul>
-                    <Progress label='javaScript'  progress={60}/>
+                 
      
             </div>
         </>

@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Skills from './components/Skills';
 import Code from './components/Code';
 
+import { Analytics } from "@vercel/analytics/react"
 
 
 function App() {
@@ -21,12 +22,13 @@ function App() {
           <div className="flex justify-center items-starafter:bg-gradient-conic after:from-transparent after:via-[#dba895] after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-transparent before:dark:opacity-10 after:dark:opacity-40 before:lg:h-[360px] z-[-1]"></div>
           <h1 className="decor opacity-20  -mt-40   hidden md:inline-block">!!</h1>
         </div>
-        <Skills />
-
+<div className='md:-mt-[25vh]'>
+        <Skills/>
+</div>
         <Code />
         <h1 className="decor opacity-20 hidden md:inline-block md:ml-[20vh] -mt-[100vh] bottom  ">@Vikas</h1>
         <Footer />
-
+<Analytics/>
       </div>
     </>
   );

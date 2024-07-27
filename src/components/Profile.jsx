@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Tooltip } from "react-tooltip";
 import Image from "../Asset/image.png";
 import { animateScroll as scroll, scroller } from 'react-scroll';
+import DiscordStatus from "./DIscordststus";
 
 const Profile = () => {
     const [currentTime, setCurrentTime] = useState(new Date());
@@ -135,8 +136,8 @@ const Profile = () => {
             <div className="container flex-wrap">
                 <div className="sm:ml-10 md:ml-20 " >
                     <div className="md:ml-1 " >
-                        <div className="meow text-clamp mt-8  ml-5 md:ml-36 md:-mt-28  w-80 text-idkfrl  ">
-                            <h1 className="w-80 text-3xl md:text-6xl">Vikas</h1>
+                        <div className="meow text-clamp mt-8  ml-5 sm:ml-36 sm:-mt-28  w-80 text-idkfrl  ">
+                            <h1 className="w-80 text-3xl sm:text-6xl">Vikas</h1>
                         </div>
                         <div className="spacee  w-10/12 md:w-5/12 ml-5 md:ml-36 text-primary-brown  text-lg md:text-3xl">
                             <h4>
@@ -273,7 +274,7 @@ const Profile = () => {
                 </div>
 
                 <div className="sm:ml-20 ">
-                    <div className="huh sm:block size-80 hidden absolute  md:ml-[100vh] top-28 mt-16  md:opacity-100 opacity-100  ">
+                    <div className="huh sm:block size-80 hidden absolute  sm:ml-[100vh] top-28 mt-16  sm:opacity-100 opacity-100  ">
                         <img src={Image}
                             className=" md:mr-36  object-cover rounded-2xl hover:scale-105 transition-all"
                             alt="thumbnail" />
@@ -281,22 +282,24 @@ const Profile = () => {
                 </div>
             </div>
 
-            <div className=" sm:ml-20 gap-3 sm:relative md:flex justify-between md:max-w-[140vh]">
-                <div className="">
-                    <h2 className="brrr  md:ml-48 ml-4 mt-28 text-primary-brown" id="about">
+            <div className=" sm:ml-20 gap-3 sm:relative md:flex   justify-between sm:max-w-[150vh] ">
+                <div className=" overflow-hidden">
+                    <h2 className="brrr  sm:ml-48 ml-4 text-[14px] sm:text-xl mt-28  text-primary-brown" id="about">
                         Currently<span className="text-idkfrl">: I Am</span>
                     </h2>
                     <img
                         src={`https://cdn.discordapp.com/avatars/${userId}/${avatarId}.png`}
                         alt="pfp"
-                        className="md:size-44 size-24 md:ml-44 ml-4 rounded-xl mt-5"
+                        className="sm:size-32 size-16 sm:ml-44 ml-4 rounded-xl mt-5"
                     />
 
 
 
-                    <div className=" text-primary-brown md:ml-96 md:-mt-40 -mt-24 ml-32  ">
-                        <h4 className="User text-xl">@{username ? username : "fetching"}</h4>
-                        <h5 className="brr">{discordStatus ? discordStatus : "Fetching"}</h5>
+                    <div className=" text-primary-brown sm:ml-[45vh] sm:-mt-32 -mt-[100px] ml-[20vh] overflow-hidden ">
+                        <h4 className="User  sm:text-xl text-[17px] font-bold">@{username ? username : "fetching"}</h4>
+                        <div className="">
+                        <DiscordStatus/>
+                        </div>
                         <h6 className="brr">{formatTime(currentTime)}</h6>
                     </div>
                 </div>
@@ -340,6 +343,7 @@ const Profile = () => {
 
 
             <Tooltip id="my-tooltip" />
+            
         </>
     );
 };
