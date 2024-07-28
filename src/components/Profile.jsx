@@ -283,20 +283,21 @@ const Profile = () => {
             </div>
 
             <div className=" sm:ml-20 gap-3 sm:relative md:flex   justify-between sm:max-w-[150vh] ">
-                <div className=" overflow-hidden">
+                <div className=" ">
                     <h2 className="brrr  sm:ml-48 ml-4 text-[14px] sm:text-xl mt-28  text-primary-brown" id="about">
                         Currently<span className="text-idkfrl">: I Am</span>
                     </h2>
                     <img
                         src={`https://cdn.discordapp.com/avatars/${userId}/${avatarId}.png`}
                         alt="pfp"
-                        className="sm:size-32 size-16 sm:ml-44 ml-4 rounded-xl mt-5"
+                        className="sm:size-36 size-20 sm:ml-44 ml-4 rounded-xl mt-2"
                     />
 
 
 
-                    <div className=" text-primary-brown sm:ml-[45vh] sm:-mt-32 -mt-[100px] ml-[20vh] overflow-hidden ">
+                    <div className=" text-primary-brown sm:ml-[45vh] sm:-mt-32 -mt-[80px] ml-[20vh] overflow-hidden ">
                         <h4 className="User  sm:text-xl text-[17px] font-bold">@{username ? username : "fetching"}</h4>
+                        <h5 className="brr">{discordStatus ? discordStatus : "Fetching"}</h5>
                         <div className="">
                         <DiscordStatus/>
                         </div>

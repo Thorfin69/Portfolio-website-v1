@@ -22,7 +22,7 @@ function App() {
           <div className="flex justify-center items-starafter:bg-gradient-conic after:from-transparent after:via-[#dba895] after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-transparent before:dark:opacity-10 after:dark:opacity-40 before:lg:h-[360px] z-[-1]"></div>
           <h1 className="decor opacity-20  -mt-40   hidden md:inline-block">!!</h1>
         </div>
-<div className='md:-mt-[25vh]'>
+<div className='md:-mt-[20vh]'>
         <Skills/>
 </div>
         <Code />

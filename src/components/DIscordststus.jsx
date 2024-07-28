@@ -97,7 +97,7 @@ const DiscordStatus = () => {
           </div>
         ) : (
           <div>
-            <p style={{ margin: "0" }}>online</p>
+            {/* <p style={{ margin: "0" }}>online</p> */}
             {/* <p style={{ margin: "0" }}>{new Date().toLocaleString()}</p> */}
           </div>
         )}
