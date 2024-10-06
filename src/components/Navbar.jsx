@@ -48,7 +48,7 @@ export default function Navbar() {
     }, [isScrolling]);
 
     return (
-        <div className={`navbar text-[#cfcfcf] ${isScrolling ? 'sticky' : ''}  opacity-95 top-0 md:top-[10px] flex flex-row md:mt-5 mt-0 z-auto justify-center items-center md:w-96 w-full gap-24 mx-auto text-primary-brown ${isScrolling ? 'bg-meow' : ''} py-5 px-16 h-16 rounded-xl transition-all ease-in-out border-spacing-1 duration-300 border-[#867373] ${isScrolling ? 'backdrop-blur-lg border-[#867373] border-spacing-2  top-0 transition-all duration-1000' : ''}`}>
+        <div className={`navbar text-[#cfcfcf] ${isScrolling ? 'sticky' : ''} opacity-95 top-0 md:top-[10px] flex flex-row md:mt-5 mt-0 z-auto justify-center items-center md:w-96 w-full gap-24 mx-auto text-primary-brown ${isScrolling ? 'bg-meow' : ''} py-5 px-16 h-16 rounded-xl transition-all ease-in-out border-spacing-1 duration-300 border-[#867373] ${isScrolling ? 'backdrop-blur-lg border-[#867373] border-spacing-2  top-0 transition-all duration-1000' : ''}`}>
 
             <div className="flex-col-1 shrink-0">
                 <a href="/" onClick={(e) => scrollToTop(e)}>/</a>
