@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Tooltip } from "react-tooltip";
 import Image from "../Asset/image.png";
 import { animateScroll as scroll, scroller } from 'react-scroll';
-import DiscordStatus from "./DIscordststus";
+import DiscordStatus from "./DiscordStatus";
 
 const Profile = () => {
     const [currentTime, setCurrentTime] = useState(new Date());
